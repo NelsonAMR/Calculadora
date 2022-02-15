@@ -1,0 +1,179 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(48, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    min-width: 25%;
+    max-width: 75%;
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 1rem -1rem #000;
+    justify-items: center;
+}
+
+.screen{
+    width: 95%;
+    background-color: #fff;
+    grid-column: 1 / 5;
+    border-radius: 0.25rem;
+    height: 6rem;
+    /* border: none;
+    outline: none; */
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 4rem;
+}
+
+.btn{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+}
+
+.verde{
+    background-color: rgba(34, 168, 0, 0.966);
+    color: #fff;
+}
+
+.verde:hover{
+    background-color: rgb(27, 126, 3);
+}
+
+.verde:active{
+    background-color: rgba(34, 168, 0, 0.966);
+}
+
+.rojo{
+    background-color: rgb(230, 52, 8);
+    color: #fff;
+}
+
+.rojo:hover{
+    background-color: rgb(184, 43, 8);
+}
+
+.rojo:active{
+    background-color: rgb(230, 52, 8);
+}
+
+.gris{
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+}
+
+.gris:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+.gris:active{
+    background-color: rgb(43, 43, 43);
+}
+
+.naranja{
+    background-color: rgb(255, 115, 0);
+    color: #fff;
+}
+
+.naranja:hover{
+    background-color: rgb(185, 86, 4);
+}
+
+.naranja:active{
+    background-color: rgb(255, 115, 0);
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main{
+        min-width: 95%;
+        min-height: 75%;
+    }
+
+    .screen{
+        height: 7rem;
+    }
+
+    .btn{
+        width: 7rem;
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+
+    .verde:hover{
+        background-color: rgba(34, 168, 0, 0.966);
+    }
+
+    .verde:active{
+        background-color: rgb(27, 126, 3);
+    }
+
+    .rojo:hover{
+        background-color: rgb(230, 52, 8);
+    }    
+
+    .rojo:active{
+        background-color: rgb(184, 43, 8);
+    }
+
+    .gris:hover{
+        background-color: rgb(43, 43, 43);
+    }
+
+    .gris:active{
+        background-color: rgb(29, 29, 29);
+    }
+
+    .naranja:hover{
+        background-color: rgb(255, 115, 0);
+    }
+
+    .naranja:active{
+        background-color: rgb(185, 86, 4);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .screen{
+        height: 5rem;
+    }
+
+    .btn{
+        width: 5rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+}
